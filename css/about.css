@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.about-container img{
+     width: 550px;
+     border-radius: 6.2rem 1rem ;
+     box-shadow: 2px 2px 8px #222;
+}
+
+#about{
+    min-height: calc(100vh - 90px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #004bad25;
+    border: 1px solid var(--primary-lilas);
+    box-shadow: 0px 0px 4px #222;
+    width: 50%;
+}
+
+.about-title h2{
+    font-family: "Sora", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-lilas);
+}
+.about-title span{
+    font-style: italic;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+}
+
+.about-text p{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: #2a2a2a;
+}
+
+.about-text ul li{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+@media (max-width: 1200px){
+    .about-container img{
+      width: 450px;
+    }
+    .about-text p{
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+    .about-text ul li{
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+        
+    }
+}
+@media (max-width: 1100px){
+    .about-container{
+        flex-direction: column;
+        margin-top: 6rem
+    }
+    
+    .about-content{
+        width: 90%;
+    }
+}
+@media (max-width: 635px){
+    .about-container img{
+        width: 400px;
+    }
+    .about-title h2{
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .about-title span{
+        font-size: 0.8rem;
+    }
+    .about-text p{
+        text-align: center;
+    }
+
+    .about-text ul li{
+        line-height: 1.3rem;
+        text-align: center;
+        padding-bottom: 0.2rem;
+    }
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.header{
+    background-image: url(/assets/natureza.jpg);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;    
+    color: #004969;
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    
+}
+.header::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7) 90%, transparent 100%);
+    z-index: -999;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+.header ul, li{
+    display: flex;
+    gap: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 500ms;
+}
+
+.header-menu ul li:hover{
+    transition: 0.3s;
+    color: var(--primary-lilas);
+    transform: scale(1.1);
+}
+
+.button-header{
+    background-color: #f2f2f2;
+    width: fit-content;
+    align-self: center;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition:  500ms;
+}
+
+.button-header:hover{
+    background-color: var(--primary-lilas);
+    color: #f9f9f9ea;
+    transition: 0.3s linear;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px){
+    .button-header{
+        font-size: .9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .header li{
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+}
+@media (max-width: 968px){
+      .header-menu{
+        display: none;
+      }
+      .header-container{
+        margin: 0 1rem;
+      }
+}
+
+@media (max-width: 650px){
+    .header{
+        padding: .5rem .5rem;
+    }
+    .ocultar{
+        display: none;
+    }
+    .button-header{
+        font-weight: 600;        
+    }
+}

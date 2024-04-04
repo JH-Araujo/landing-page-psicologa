@@ -1,0 +1,148 @@
+
+
+#home{
+    background-image: url(/assets/natureza.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+	position: relative;
+	min-height: calc(100vh - 90px);
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 1rem;
+}
+#home::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.7) 10%, transparent 100%);
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon-logo{
+   height: 50px;
+    
+}
+
+.home-logo{
+    width: 600px;
+    border-radius: 12em 1em 12em 1em;
+    border: 1px solid var(--primary-lilas);
+    z-index: 97;
+    background-color: #f9f9f95b;
+}
+
+.home-informations{
+    background-color: #f9f9f9ce;
+    border: 1px solid var(--primary-blue);
+    border-radius: 2rem;
+    z-index: 98;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.home-informations h1{
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary-lilas);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.home-informations ul li{
+    color: rgb(24, 24, 24);
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.home-button{
+    background-color: transparent;
+    width: fit-content;
+    align-self: center;
+    padding: 1rem 3rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition:  500ms;
+}
+
+.home-button:hover{
+    background-color: var(--primary-lilas);
+    color: #f9f9f9ea;
+    transition: 0.3s linear;
+    transform: scale(1.1);
+}
+
+.button-contact{
+    position: fixed;
+    right: 0rem;
+    bottom: 0rem;
+    width: 100px;
+    transition:  500ms;
+    z-index: 999;
+}
+
+.button-contact:hover{
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 8px var(--primary-lilas)); 
+}
+
+@media (max-width: 1090px){
+  #home{
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .home-logo{
+    margin-top: 1rem;
+    width: 400px;
+    border-radius: 9em 1em 9em 1em;
+    
+  }
+  .home-informations{
+    margin-bottom: 1rem;
+  }
+  .button-contact {
+    right: -1em;
+    bottom: 1rem;
+    width: 80px;
+}
+.button-contact img{
+    width: 70px;
+}
+}
+
+
+@media (max-width: 635px){
+    #home{
+     padding: 0;  
+     gap: 0.5rem; 
+    }
+    .home-logo{
+        width: 280px;
+        border-radius: 6em 0.5em 6em 0.5em;
+      }
+    
+    .home-informations{
+        padding: 1.5rem 0.5rem;
+    }
+    .home-informations ul li{
+        font-size: .9rem;
+        
+    }
+    .button-contact img{
+        width: 60px;
+    }
+}
