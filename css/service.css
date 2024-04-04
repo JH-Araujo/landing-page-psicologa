@@ -132,3 +132,9 @@
         width: 350px;
     }
 }
+
+@media (max-width: 465px){
+    .services-info img{
+        width: 300px;
+    }
+}

@@ -108,3 +108,9 @@
         padding-bottom: 0.2rem;
     }
 }
+
+@media (max-width: 465px){
+    .about-container img{
+        width: 350px;
+    }
+}

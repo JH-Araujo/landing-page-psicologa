@@ -45,6 +45,7 @@
     z-index: 98;
     display:flex;
     flex-direction: column;
+
     gap: 2rem;
     padding: 2rem;
     border-radius: 2rem;
@@ -144,5 +145,15 @@
     }
     .button-contact img{
         width: 60px;
+    }
+}
+
+@media (max-width: 465px){
+    .home-informations{
+        width: 95%;
+        gap: 1rem;
+    }
+    .home-informations h1{
+        font-size: 1.3rem;
     }
 }
