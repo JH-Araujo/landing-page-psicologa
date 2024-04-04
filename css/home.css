@@ -1,7 +1,7 @@
 
 
 #home{
-    background-image: url("./assets/natureza.jpg");
+    background-image: url("../assets/natureza.jpg");
     background-size: cover;
     background-position: right;
     display: flex;
