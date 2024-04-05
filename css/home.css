@@ -162,6 +162,9 @@
     .button-contact img{
         width: 60px;
     }
+    .home-informations h1{
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 465px){
@@ -170,6 +173,6 @@
         gap: 1rem;
     }
     .home-informations h1{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
