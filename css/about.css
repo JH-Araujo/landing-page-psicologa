@@ -134,12 +134,28 @@
         padding-bottom: 0.2rem;
     }
 
+    .container-contacts{
+        flex-direction: column;
+    }
     
 
 }
 
 @media (max-width: 465px){
+    .about-title h2{
+        font-size: 1em;
+    }
+    .about-text p{
+        text-align: center;
+    }
     .img-about{
         width: 350px;
     }
+}
+
+@media (max-width: 371px){
+    .img-about{
+        width: 250px;
+    }
+
 }
