@@ -79,11 +79,11 @@
 
 
 .services-info img{
-    width: 450px;
+    width: 500px;
     align-self: center;
     height: fit-content;
     box-shadow: 2px 2px 8px #222;
-    border-radius: 1rem 10rem 4rem;
+    border-radius: 2rem 6rem ;
 }
 
 @media (max-width: 1200px){
