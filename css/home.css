@@ -1,3 +1,27 @@
+.typing{
+    width: 500px;
+
+    animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+@keyframes typing{
+    from{
+        width: 0
+    }
+}
+
+@keyframes blink {
+    from{
+        50%{
+            border-color: tranparent;
+        }
+    }
+}
+
+
 
 
 #home{
@@ -55,8 +79,11 @@
     text-transform: uppercase;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--primary-lilas);
-    text-align: center;
     font-size: 1.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .home-informations ul li{
@@ -64,7 +91,14 @@
     padding: 0.5rem;
     font-size: 1.1rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+.home-informations ul li img{
+    width: 25px;
+}
+
 
 
 .home-button{

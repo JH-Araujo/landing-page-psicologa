@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
-.about-container img{
+.img-about{
      width: 550px;
      border-radius: 6.2rem 1rem ;
      box-shadow: 2px 2px 8px #222;
@@ -36,7 +36,13 @@
     font-size: 2rem;
     font-weight: 500;
     color: var(--primary-lilas);
+    display: flex;
+    align-items: start;
 }
+.about-title h2 img{
+    width: 25px;
+}
+
 .about-title span{
     font-style: italic;
     font-weight: 500;
