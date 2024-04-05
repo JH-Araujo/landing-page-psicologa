@@ -1,28 +1,3 @@
-.typing{
-    width: 500px;
-
-    animation: typing 1s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-
-}
-
-@keyframes typing{
-    from{
-        width: 0
-    }
-}
-
-@keyframes blink {
-    from{
-        50%{
-            border-color: tranparent;
-        }
-    }
-}
-
-
-
 
 #home{
     background-image: url("../assets/natureza.jpg");
@@ -60,6 +35,7 @@
     border: 1px solid var(--primary-lilas);
     z-index: 97;
     background-color: #f9f9f95b;
+    padding: 0 1rem;
 }
 
 .home-informations{
@@ -104,7 +80,10 @@
 .home-button{
     background-color: transparent;
     width: fit-content;
+    display: flex;
+    align-items: center;
     align-self: center;
+    justify-content: center;
     padding: 1rem 3rem;
     border: 1px solid black;
     border-radius: 1rem;
@@ -118,6 +97,9 @@
     color: #f9f9f9ea;
     transition: 0.3s linear;
     transform: scale(1.1);
+}
+.icon-agenda{
+    width: 30px;
 }
 
 .button-contact{
