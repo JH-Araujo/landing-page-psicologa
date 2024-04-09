@@ -95,8 +95,8 @@
 .home-button:hover{
     background-color: var(--primary-lilas);
     color: #f9f9f9ea;
-    transition: 0.3s linear;
-    transform: scale(1.1);
+    transition: 0.2s linear;
+    transform: scale(1.01);
 }
 .icon-agenda{
     width: 30px;

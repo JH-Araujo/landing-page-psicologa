@@ -81,12 +81,12 @@
     border: 1px solid;
     padding: 1rem;
     border-radius: 1rem;
-    transition:  500ms;
+    transition:  300ms;
 }
 
 .icon-lattes:hover, .icons-sociais:hover{
-    transition: 0.3s linear;
-    transform: scale(1.2);
+    transition: 0.1s linear;
+    transform: scale(1.05);
 }
 @media (max-width: 1200px){
     .img-about{

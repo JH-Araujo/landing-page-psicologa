@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 8rem 0;
+    margin: 8rem 0 2rem 0;
     gap: 3rem;
 }
 
@@ -109,6 +109,11 @@
     .info-container{
         width: 85%;
     }
+    .agende-agora{
+        text-align: center;
+        width: 100%;
+
+    }
 }
 
 @media (max-width: 968px){
@@ -141,7 +146,12 @@
     .img-services{
         width: 350px;
     }
+  .agende-agora h1{
+        font-size: 0.2em;
+    }
 }
+
+
 
 @media (max-width: 465px){
     .img-services{
